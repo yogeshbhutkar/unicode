@@ -4,7 +4,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/utils/cn";
 import FileComponent from "../document/file-component";
-import FolderComponent from "../document/folder-component";
 
 type Tab = {
   title: string;
@@ -17,11 +16,6 @@ const propTabs = [
     title: "Files",
     value: "Files",
     content: <FileComponent />,
-  },
-  {
-    title: "Folders",
-    value: "Folders",
-    content: <FolderComponent />,
   },
 ];
 
